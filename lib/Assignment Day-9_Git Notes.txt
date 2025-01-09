@@ -1,0 +1,58 @@
+# 1. Configure Git (run once per setup)
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+
+# 2. Initialize a Git repository
+git init
+
+# 3. Clone an existing repository
+git clone <repository_url>
+
+# 4. Check the repository status
+git status
+
+# 5. Stage files for commit
+git add <file_name>         # Add a specific file
+git add .                   # Add all changes
+
+# 6. Commit changes
+git commit -m "Your commit message"
+
+# 7. View commit history
+git log
+
+# 8. Create and switch branches
+git branch <branch_name>    # Create a new branch
+git checkout <branch_name>  # Switch to a branch
+
+# 9. Merge a branch
+git merge <branch_name>
+
+# 10. Push changes to a remote repository
+git push origin <branch_name>
+
+# 11. Pull changes from a remote repository
+git pull origin <branch_name>
+
+# 12. Discard changes in a file
+git checkout -- <file_name>
+
+# 13. Delete a branch
+git branch -d <branch_name>
+
+# 14. View differences
+git diff
+
+# 15. Stash and restore changes
+git stash                   # Save changes temporarily
+git stash apply             # Restore stashed changes
+
+# 16. Remove a file from Git but keep it locally
+git rm --cached <file_name>
+
+# 17. Reset changes or commits
+git reset <file_name>       # Unstage a file
+git reset --hard <commit_hash> # Reset to a specific commit
+
+# 18. Revert a specific commit
+git revert <commit_hash>
